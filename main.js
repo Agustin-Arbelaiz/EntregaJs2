@@ -64,32 +64,36 @@ function mostrarDetalles(cerveza){
 };
 
 //estructura principal
-
-function mostrarBirras (cervezas){
-
-    const contenedorDeBirras = document.getElementById("contenedor-de-birras");
-    contenedorDeBirras.innerHTML ="";
-
-    cervezas.forEach(cerveza => {
-        const divCerveza = document.createElement ("div");
-        divCerveza.classList.add("cerveza");
-        divCerveza.innerHTML = `
-            <img src= "${cerveza.imagen}" alt="${cerveza.estilo}" >
-            <h3>${cerveza.estilo}</h3>
-        `;
-        const detalleBirra = document.createElement("button");
-        detalleBirra.innerText = "Caracteristicas generales";
-        detalleBirra.addEventListener ("click", ()=> {
-            mostrarDetalles(cerveza);
-            botonVolver();
-            botonCompra(cerveza);
-            botonVerPedido();
-            
+fetch('/data/data.json')
+    .then(res => res.json())
+    .then(data=> {
+        
+            const contenedorDeBirras = document.getElementById("contenedor-de-birras");
+            contenedorDeBirras.innerHTML ="";
+    
+        data.forEach(cerveza => {
+            const divCerveza = document.createElement ("div");
+            divCerveza.classList.add("cerveza");
+            divCerveza.innerHTML = `
+                <img src= "${cerveza.img}" alt="${cerveza.estilo}" >
+                <h3>${cerveza.estilo}</h3>
+            `;
+            const detalleBirra = document.createElement("button");
+            detalleBirra.innerText = "Caracteristicas generales";
+            detalleBirra.addEventListener ("click", ()=> {
+                mostrarDetalles(cerveza);
+                botonVolver();
+                botonCompra(cerveza);
+                botonVerPedido();
+                
+            });
+            divCerveza.appendChild(detalleBirra);
+            contenedorDeBirras.appendChild(divCerveza);
         });
-        divCerveza.appendChild(detalleBirra);
-        contenedorDeBirras.appendChild(divCerveza);
-    });
-};
+    }
+    )
+
+
 
 function botonVolver(){
     const backButton = document.createElement("button");

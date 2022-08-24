@@ -1,0 +1,9 @@
+[
+{ "estilo":"Indian Pale Ale" ,"ibu" :"45","alcohol":"6","precio": 450, "img":"../images/jamineta.jpg","descripcion": "American Ipa hecha y derecha. Balanceada y con alta tomabilidad. La vieja confiable."},
+ {"estilo":"Scottish export","ibu" : "18", "alcohol":"5","precio": 300,"img": "../images/scottish.jpg", "descripcion":"Caramelo intenso, maltas tostadas y ahumadas. Gran tomabilidad, excelente balance."},
+ {"estilo":"Session Ipa", "ibu" :"25","alcohol":"4,5","precio": 400 ,"img":"../images/sessionipa.jpg", "descripcion":"Suave, fresca, tomable y ligeramente amarga. Para los que no saben con que arrancar, esta es la indicada."},
+{"estilo":"Neipa","ibu" :"x","alcohol":"6,5","precio":550,"img":"../images/neipa.jpg","descripcion":"La reina del lupulo, frutada, seca, adictiva. Ideal para los amantes del lupulo"},
+{"estilo":"Catharina sour","ibu" : "8","alcohol":"4,5","precio":400, "img":"../images/sour.jpg","descripcion":"Mezcla de frutas de estacion, fresca y compleja. La frutilla del postre. En esta reina la acidez."},
+{"estilo":"Golden Summer Ale","ibu" :"20","alcohol":"5,5","precio":300,"img":"../images/goldeneta.webp", "descripcion":"Cerveza suave, de alta tomabilidad, y cuerpo cedoso."},
+ {"estilo":"Doble Hazy Ipa", "ibu" :"x", "alcohol":"7,1", "precio":550,"img": "../images/copaipa.webp", "descripcion":"Una bomba lupulada, con alta graduación alcoholica, pero mucha tomabilidad. "}
+]

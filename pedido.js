@@ -48,3 +48,5 @@ function mostrarPedido(carrito){
 }
 
 mostrarPedido();
+
+
